@@ -1,4 +1,5 @@
 import { RegistrationForm } from "@/components/RegistrationForm";
+import logoBoticario from "@/assets/logo-boticario.jpg";
 
 const Index = () => {
   return (
@@ -7,12 +8,11 @@ const Index = () => {
       <header className="bg-background border-b border-border sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">B</span>
-            </div>
-            <span className="text-xl font-bold text-foreground tracking-tight">
-              BOTICÁRIO
-            </span>
+            <img 
+              src={logoBoticario} 
+              alt="O Boticário" 
+              className="h-10 w-auto object-contain"
+            />
           </div>
           <div className="flex items-center gap-3">
             <button className="hidden sm:block px-4 py-2 text-sm font-medium text-foreground border border-border rounded-lg hover:bg-muted transition-colors">
