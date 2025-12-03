@@ -1,5 +1,6 @@
 import { RegistrationForm } from "@/components/RegistrationForm";
 import logoBoticario from "@/assets/logo-boticario.jpg";
+import produtosGrupoBoticario from "@/assets/produtos-grupo-boticario.png";
 
 const Index = () => {
   return (
@@ -67,17 +68,13 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start max-w-5xl mx-auto">
             {/* Product Image */}
-            <div className="flex justify-center md:justify-end">
-              <div className="relative">
-                <div className="w-64 h-80 md:w-80 md:h-96 bg-gradient-to-b from-muted to-muted/50 rounded-2xl flex items-center justify-center overflow-hidden shadow-xl">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-48 mx-auto bg-gradient-to-b from-amber-800 to-amber-900 rounded-lg shadow-2xl relative">
-                      <div className="absolute inset-x-4 top-4 bottom-12 bg-gradient-to-b from-red-800 to-red-900 rounded opacity-80"></div>
-                      <div className="absolute bottom-0 inset-x-0 h-12 bg-gradient-to-b from-amber-700 to-amber-800 rounded-b-lg"></div>
-                    </div>
-                    <p className="mt-4 text-2xl font-serif italic text-foreground/70">malbec</p>
-                  </div>
-                </div>
+            <div className="flex justify-center md:justify-end order-first md:order-none mb-6 md:mb-0">
+              <div className="relative w-full max-w-sm md:max-w-md">
+                <img 
+                  src={produtosGrupoBoticario} 
+                  alt="Produtos Grupo Boticário - Malbec, Eudora, Quem Disse Berenice, O.U.i" 
+                  className="w-full h-auto rounded-2xl shadow-xl object-cover"
+                />
               </div>
             </div>
 
