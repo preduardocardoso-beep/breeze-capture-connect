@@ -11,7 +11,7 @@ const Index = () => {
             <img 
               src={logoBoticario} 
               alt="O Boticário" 
-              className="h-10 w-auto object-contain"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </div>
           <div className="flex items-center gap-3">
