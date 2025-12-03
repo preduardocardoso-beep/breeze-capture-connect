@@ -1,7 +1,9 @@
 import { RegistrationForm } from "@/components/RegistrationForm";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import logoBoticario from "@/assets/logo-boticario.jpg";
 import produtosGrupoBoticario from "@/assets/produtos-grupo-boticario.png";
 import heroBanner from "@/assets/hero-banner-boticario.jpg";
+import { MapPin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -87,6 +89,49 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground">{benefit.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Locations Section */}
+      <section className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <h3 className="text-2xl font-bold text-center text-foreground mb-8">
+            Nossos Endereços
+          </h3>
+          <div className="max-w-2xl mx-auto">
+            <Tabs defaultValue="santo-andre" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 mb-6">
+                <TabsTrigger value="santo-andre" className="text-sm md:text-base">Santo André</TabsTrigger>
+                <TabsTrigger value="diadema" className="text-sm md:text-base">Diadema</TabsTrigger>
+              </TabsList>
+              <TabsContent value="santo-andre">
+                <div className="bg-card rounded-xl p-6 md:p-8 shadow-lg border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <MapPin className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground mb-2">Santo André</h4>
+                      <p className="text-muted-foreground">Rua Marília 121, Casa Branca</p>
+                    </div>
+                  </div>
+                </div>
+              </TabsContent>
+              <TabsContent value="diadema">
+                <div className="bg-card rounded-xl p-6 md:p-8 shadow-lg border border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <MapPin className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-foreground mb-2">Diadema</h4>
+                      <p className="text-muted-foreground">Rua Manoel da Nóbrega 219, Centro</p>
+                    </div>
+                  </div>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </div>
       </section>
