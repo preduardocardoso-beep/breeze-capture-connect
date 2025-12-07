@@ -4,7 +4,7 @@ import logoBoticario from "@/assets/logo-boticario.jpg";
 import produtosGrupoBoticario from "@/assets/produtos-grupo-boticario.png";
 import heroBanner from "@/assets/hero-banner-boticario.jpg";
 import espacoRevendedor from "@/assets/espaco-revendedor.jpg";
-import { MapPin } from "lucide-react";
+import { MapPin, Navigation } from "lucide-react";
 
 const Index = () => {
   return (
@@ -128,9 +128,18 @@ const Index = () => {
                     <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h4 className="text-lg font-semibold text-foreground mb-2">Santo André</h4>
-                      <p className="text-muted-foreground">Rua Marília 121, Casa Branca</p>
+                      <p className="text-muted-foreground mb-4">Rua Marília 121, Casa Branca</p>
+                      <a 
+                        href="https://www.google.com/maps/dir/?api=1&destination=Rua+Marília+121,+Casa+Branca,+Santo+André,+SP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+                      >
+                        <Navigation className="w-4 h-4" />
+                        Como chegar
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -141,9 +150,18 @@ const Index = () => {
                     <div className="bg-primary/10 p-3 rounded-full">
                       <MapPin className="w-6 h-6 text-primary" />
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <h4 className="text-lg font-semibold text-foreground mb-2">Diadema</h4>
-                      <p className="text-muted-foreground">Rua Manoel da Nóbrega 219, Centro</p>
+                      <p className="text-muted-foreground mb-4">Rua Manoel da Nóbrega 219, Centro</p>
+                      <a 
+                        href="https://www.google.com/maps/dir/?api=1&destination=Rua+Manoel+da+Nóbrega+219,+Centro,+Diadema,+SP" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+                      >
+                        <Navigation className="w-4 h-4" />
+                        Como chegar
+                      </a>
                     </div>
                   </div>
                 </div>
