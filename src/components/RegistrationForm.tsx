@@ -90,7 +90,7 @@ export function RegistrationForm() {
     });
 
     setTimeout(() => {
-      window.open(`https://wa.me/5511915367348?text=${message}`, "_blank");
+      window.open(`https://wa.me/5511965943658?text=${message}`, "_blank");
       setIsSubmitting(false);
     }, 1500);
   };
