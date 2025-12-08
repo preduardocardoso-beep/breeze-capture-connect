@@ -187,7 +187,7 @@ const Index = () => {
         href="https://wa.me/5511965943658"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#20bd5a] transition-colors font-medium"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-[#25D366] text-white px-4 py-3 rounded-full shadow-lg hover:bg-[#20bd5a] transition-colors font-medium animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite]"
       >
         <MessageCircle className="w-5 h-5" />
         Falar com promotor
