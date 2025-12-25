@@ -1,4 +1,5 @@
 import { RegistrationForm } from "@/components/RegistrationForm";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import logoBoticario from "@/assets/logo-boticario.jpg";
 import produtosGrupoBoticario from "@/assets/produtos-grupo-boticario.png";
@@ -93,6 +94,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsCarousel />
 
       {/* Locations Section */}
       <section className="py-12 md:py-16">
