@@ -5,28 +5,36 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { User } from "lucide-react";
+
+import testimonialRayssa from "@/assets/testimonial-rayssa.jpg";
+import testimonialBrunoAlex from "@/assets/testimonial-bruno-alex.jpg";
+import testimonialMariana from "@/assets/testimonial-mariana.jpg";
+import testimonialMirian from "@/assets/testimonial-mirian.jpg";
 
 const testimonials = [
   {
     name: "Rayssa Oliveira",
     location: "Revendedora O Boticário em São Carlos - SP",
     quote: "A pronta-entrega de produtos O Boticário e Eudora fez toda diferença aqui, inspirando força e variedade para atrair cada vez mais clientes.",
+    image: testimonialRayssa,
   },
   {
     name: "Bruno e Alex",
     location: "Revendedores O Boticário em Arapiraca - AL",
     quote: "Para mim, a venda direta é tudo. Ela é um caminho de perseverança, garra e vontade. A demanda é tão grande que preciso de um carro baú para carregar todas as mercadorias do Grupo Boticário.",
+    image: testimonialBrunoAlex,
   },
   {
     name: "Mariana Nishi",
     location: "Revendedora O Boticário em São Bernardo do Campo - SP",
     quote: "Achava que não tinha habilidade para vendas, mas me descobri uma vendedora do Boticário.",
+    image: testimonialMariana,
   },
   {
     name: "Mirian Camargo",
     location: "Revendedora O Boticário em Cotia - SP",
     quote: "Muito orgulho de ser revendedora do Grupo Boticário. Conquistei coisas que eu não imaginava, como conhecer Dubai, Paris e ganhar meu carro.",
+    image: testimonialMirian,
   },
 ];
 
@@ -52,9 +60,12 @@ export function TestimonialsCarousel() {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                   <div className="p-4">
                     <div className="flex flex-col items-center text-center">
-                      {/* Avatar placeholder */}
                       <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl bg-muted flex items-center justify-center mb-4 overflow-hidden shadow-lg">
-                        <User className="w-24 h-24 text-muted-foreground/50" />
+                        <img 
+                          src={testimonial.image} 
+                          alt={testimonial.name}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
 
                       <h4 className="text-lg font-semibold text-foreground">
