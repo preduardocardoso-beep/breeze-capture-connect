@@ -1,5 +1,6 @@
 import { RegistrationForm } from "@/components/RegistrationForm";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
+import { ChatBot } from "@/components/ChatBot";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import logoBoticario from "@/assets/logo-boticario.jpg";
 import produtosGrupoBoticario from "@/assets/produtos-grupo-boticario.png";
@@ -186,6 +187,9 @@ const Index = () => {
           </p>
         </div>
       </footer>
+      {/* ChatBot */}
+      <ChatBot />
+
       {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/5511965943658"
